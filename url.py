@@ -14,3 +14,7 @@ def show_user_profile(username):
 @app.route('/post/<int:post_id>')
 def show_post(post_id):
 	return 'Post %d' % post_id
+
+@app.route('/path/<path:subpath>')
+def show_subpath(subpath):
+	return 'Subpath of path is: %s' % subpath
